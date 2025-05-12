@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 ELements and Form</title>
+    <style>
+        table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    </style>
+</head>
+<body>
+    <h2>List of Fruits</h2>
+    <ol type="i">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ol>
+    <!-- External image from pexels.com -->
+     <img src="https://images.pexels.com/photos/2316466/pexels-photo-2316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+          alt="Banana image from Pexels.com" width="400px" >
+
+    <h2>Contact Table</h2>
+    <table>
+        <caption>Contact Information</caption>
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Emails</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Adebola Ali</td>
+                <td>Lagos, Nigeria</td>
+                <td>0906478356</td>
+                <td>ali@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Bimbola Funke</td>
+                <td>Oyo, Nigeria</td>
+                <td>0806482442356</td>
+                <td>bimbola@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>John Smith</td>
+                <td>New York, USA</td>
+                <td>+9236-4783-656</td>
+                <td>john@gmail.com</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Emeka Chidi</td>
+                <td>New York, USA</td>
+                <td>+9236-4783-656</td>
+                <td>emeka@gmail.com</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Abdullah Musa</td>
+                <td>New York, USA</td>
+                <td>+9236-4783-656</td>
+                <td>musa@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter email address" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter password" minlength="4" maxlength="8" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required>
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" placeholder="Enter your date of birth" required>
+            <br><br>
+            <label for="states">Choose your state</label>
+            <select name="states" id="states">
+                <option value="abuja">Abuja</option>
+                <option value="Bauchi">Bauchi</option>
+                <option value="cross-river">Cross River</option>
+                <option value="lagos">Lagos</option>
+            </select>
+            <br>
+            <p>What is your Gender</p>
+            <input type="radio" id="male" name="sex" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="sex" value="Other">
+            <label for="other">Other</label><br>
+            <p>Choose your hobby</p>
+            <input type="checkbox" id="hobbies" name="hobbies" value="hobbies">
+            <label for="hobbies">Football</label>
+            <input type="checkbox" id="hobbies" name="hobbies" value="hobbies">
+            <label for="hobbies">Music</label>
+            <input type="checkbox" id="hobbies" name="hobbies" value="hobbies">
+            <label for="hobbies">Travel</label>
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
